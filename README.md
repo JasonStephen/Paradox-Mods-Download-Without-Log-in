@@ -1,7 +1,7 @@
 # Paradox Mods Download Without Log-in / Paradox Mods 免登录下载 🚀
 
 ![Tampermonkey](https://img.shields.io/badge/Tampermonkey-Script-blue)  
-![License](https://img.shields.io/badge/License-Personal%20Use%20Only-red)  
+![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue)  
 ![Year](https://img.shields.io/badge/Year-2025-green)
 
 ## Introduction / 简介 📖
