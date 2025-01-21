@@ -6,10 +6,10 @@
 
 ## Introduction / 简介 📖
 
-This script is designed to automatically download specified mod files from the **Paradox Mods** website without requiring a login.  
+This script is designed to download specified mod files from the **Paradox Mods** website without requiring a login.  
 **Note: This script is strictly for personal use in learning programming techniques. It must not be used for any other purposes, especially not for any actions that could harm Paradox Mods.**
 
-此脚本用于自动从 **Paradox Mods** 网站下载指定模组文件，无需登录即可完成下载。  
+此脚本用于从 **Paradox Mods** 网站下载指定模组文件，且无需登录即可完成下载。  
 **注意：本脚本仅限个人学习编程技术使用，切勿用于其他用途，严禁用于损害 Paradox Mods 的行为中。**
 
 ---
