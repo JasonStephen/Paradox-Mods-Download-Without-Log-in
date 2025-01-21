@@ -30,21 +30,18 @@ This script is designed to automatically download specified mod files from the *
 ## Usage Instructions / 使用说明 🛠️
 
 1. **Install the Script / 安装脚本**: 🧩 
-   - Use a user script manager like [Tampermonkey](https://www.tampermonkey.net/).  
-
+   - Use a user script manager like [Tampermonkey](https://www.tampermonkey.net/).
    - 使用 [Tampermonkey](https://www.tampermonkey.net/) 等用户脚本管理器。
 
 2. **Download Mods / 下载模组**:  ⬇️
    - Visit the Paradox Mods website and navigate to the page of the mod you wish to download.  
    - Click the **Download mod** button, and the script will automatically handle the download without prompting a login window (you still need to log in to add mods to your playset and to comment on mods).  
-
    - 访问 Paradox Mods 网站，找到你想要下载的模组页面。  
    - 点击 **Download mod** 按钮，脚本会自动完成下载，而不再弹出登录窗口（你仍然需要登录来将模组添加到 playset 以及评论模组）。
 
 4. **Filename Explanation / 文件名说明**:  📄
    - The default filename format is `<modid>_<version>.zip`, which is convenient for direct import into Paradox Mods clients.  
    - If you prefer to use the original filename format (`<name>_<version>.zip`), modify the `GM_download` section in the script as follows:  
-
    - 默认文件名格式为 `<modid>_<version>.zip`，方便直接导入 Paradox Mods 客户端。  
    - 如果需要使用原始文件名（`<name>_<version>.zip`），请修改脚本中的 `GM_download` 部分：  
      ```javascript
@@ -67,5 +64,19 @@ This script is designed to automatically download specified mod files from the *
 
 ## License / 许可证 📄
 
-This project is licensed under a **Personal Use License**. It is prohibited to use this project for any commercial or illegal purposes.  
-本项目遵循 **个人使用许可**，禁止用于任何商业或非法用途。
+This project is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**.  
+本项目遵循 **CC BY-NC-SA 4.0 许可证**，允许他人修改和重新分发代码，但必须满足以下条件：
+
+1. **Attribution (署名)**：必须保留原始作者的署名。  
+   **You must give appropriate credit, provide a link to the license, and indicate if changes were made.**
+
+2. **NonCommercial (非商业用途)**：禁止将代码用于商业用途。  
+   **You may not use the material for commercial purposes.**
+
+3. **ShareAlike (相同方式共享)**：如果他人修改并重新分发代码，必须以相同的许可证发布。  
+   **If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.**
+
+**Note**：This script is for personal learning purposes only. It is strictly prohibited to use it for any illegal purposes or actions that harm Paradox Mods.  
+**注意**：本脚本仅限个人学习编程技术使用，严禁用于任何非法用途或损害 Paradox Mods 的行为中。
+
+[View the full license text (查看完整的许可证内容)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
