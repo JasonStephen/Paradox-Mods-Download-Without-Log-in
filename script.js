@@ -1,26 +1,27 @@
 // ==UserScript==
-// @name         Paradox Mods Download Without Log-in
+// @name         P社模组免登录下载 Paradox Mods Download Without Log-in
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  Paradox Mods Download Without Log-in
+// @description  Automatically download specified mod files from Paradox Mods site
 // @author       Jason Stephen
 // @match        https://mods.paradoxplaza.com/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_download
+// @license      CC BY-NC-SA 4.0
 // ==/UserScript==
 
 /*
  * Author: Jason Stephen
  * Year: 2025
+ * Description: This script is for personal learning purposes only. Do not use it for any other purposes.
  */
-
 
 (function() {
     'use strict';
 
     const loginElement = document.querySelector('[class*="AccountMenu-styles__title"]');
     if (loginElement && loginElement.textContent.trim() === 'Log in') {
-        console.log('User is not logged in. Proceeding with script download...');
+        console.log('User is not logged in. Proceeding with auto download...');
 
         const observer = new MutationObserver(function(mutations) {
             mutations.forEach(function(mutation) {
@@ -38,7 +39,7 @@
                             const modId = window.location.pathname.split('/')[2];
                             const version = urlParams.get('version') || null;
 
-                            // Ctach Mod Details
+                            // Fetch Mod Details
                             GM_xmlhttpRequest({
                                 method: 'GET',
                                 url: `https://api.paradox-interactive.com/mods?modId=${modId}&os=Windows`,
@@ -66,7 +67,7 @@
                                 }
                             });
 
-                            //Remove SignIn Dialog
+                            // Remove SignIn Dialog
                             const signInDialog = document.querySelector('[class*="SignInDialog-styles__modalWrapper"]');
                             if (signInDialog) {
                                 signInDialog.remove();
